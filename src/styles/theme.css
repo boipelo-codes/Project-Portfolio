@@ -1,0 +1,45 @@
+/* theme.css */
+:root {
+  --primary-color: #4f46e5; /* main accent */
+  --secondary-color: #6366f1;
+  --bg-color: #f9fafb;
+  --text-color: #111827;
+  --heading-color: #1f2937;
+
+  --font-base: 'Inter', sans-serif;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  /* tablet adjustments */
+}
+
+@media (max-width: 640px) {
+  /* mobile adjustments */
+}
+
+/* theme.css */
+
+:root {
+  /* Light Mode (default) */
+  --bg-color: #f9fafb;
+  --text-color: #111827;
+  --primary-color: #4f46e5;
+  --secondary-color: #6366f1;
+  --heading-color: #1f2937;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --bg-color: #111827;
+  --text-color: #f9fafb;
+  --primary-color: #6366f1;
+  --secondary-color: #4f46e5;
+  --heading-color: #f9fafb;
+}

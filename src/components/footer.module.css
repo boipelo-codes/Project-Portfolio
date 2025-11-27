@@ -1,0 +1,9 @@
+.footer {
+  background-color: var(--primary-color);
+  padding: var(--spacing-medium);
+}
+
+.title {
+  color: var(--heading-color);
+  font-size: 2rem;
+}
