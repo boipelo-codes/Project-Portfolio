@@ -2,7 +2,7 @@
 :root {
   --primary-color: #4f46e5; /* main accent */
   --secondary-color: #6366f1;
-  --bg-color: #f9fafb;
+  --bg-color: #EBE8FC;
   --text-color: #111827;
   --heading-color: #1f2937;
 
@@ -21,25 +21,52 @@
   /* mobile adjustments */
 }
 
-/* theme.css */
-
-:root {
-  /* Light Mode (default) */
-  --bg-color: #f9fafb;
-  --text-color: #111827;
-  --primary-color: #4f46e5;
-  --secondary-color: #6366f1;
-  --heading-color: #1f2937;
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 32px;
+theme-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  
+  background: var(--secondary-bg);
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  color: var(--text-primary);
 }
 
-/* Dark Mode */
-[data-theme="dark"] {
-  --bg-color: #111827;
-  --text-color: #f9fafb;
-  --primary-color: #6366f1;
-  --secondary-color: #4f46e5;
-  --heading-color: #f9fafb;
+.theme-toggle:hover {
+  transform: scale(1.1) rotate(10deg);
+  border-color: var(--accent-purple);
+  box-shadow: 0 5px 20px rgba(139, 92, 246, 0.4);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle svg {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover svg {
+  transform: rotate(20deg);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 1rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+  }
 }

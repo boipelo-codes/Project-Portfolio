@@ -22,6 +22,7 @@ role: 'Frontend Developer • Cloud Engineer',
 description: 'Full-stack data engineering solution featuring end-to-end ETL pipeline with cloud integration. Extracts retail data from Kaggle, transforms with Python, and visualizes insights through React dashboard.',
 tech: ['Python', 'PostgreSQL', 'AWS S3', 'React', 'GitHub Actions'],
 links: [{ label: 'View Code →', url: 'https://github.com/boipelo-codes/RetailPulse' }]
+[{ label: 'Live Demo →', url: 'https://pomo-task-azure.vercel.app/' }]
 },
 {
 name: 'IT Nest',

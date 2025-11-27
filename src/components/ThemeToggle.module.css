@@ -1,4 +1,6 @@
-theme-toggle {
+/* ThemeToggle.css - Save this in src/components/ThemeToggle.css */
+
+.theme-toggle {
   position: fixed;
   top: 2rem;
   right: 2rem;
