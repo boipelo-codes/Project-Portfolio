@@ -1,6 +1,9 @@
+
 # Boipelo Ngakane - Full Stack & DevOps Portfolio
 
 A modern, responsive portfolio showcasing my work as a Full Stack and DevOps Engineer. Built with **React**, **Tailwind CSS**, and **Vite**, featuring light/dark mode toggle, smooth animations, and a dynamic hero section.
+
+---
 
 ## Features
 
@@ -21,12 +24,13 @@ A modern, responsive portfolio showcasing my work as a Full Stack and DevOps Eng
 - **Build Tool:** Vite
 - **Icons:** Lucide-react
 - **Animations:** Tailwind CSS + custom keyframes
-- **Hosting:** Vercel (recommended), Netlify, Render, GitHub Pages
+- **Hosting:** Vercel, Netlify, or GitHub Pages
 
 ---
 
 ## File Structure
 
+boipelo-portfolio/
 ├─ public/
 ├─ src/
 │ ├─ components/
@@ -46,31 +50,12 @@ A modern, responsive portfolio showcasing my work as a Full Stack and DevOps Eng
 ├─ vite.config.js
 └─ index.html
 
+yaml
+Copy code
 
 ---
 
-## Installation & Setup
-
-1. **Clone the repository:**
-
-```bash
-git clone https://github.com/boipelo-codes/boipelo-portfolio.git
-cd boipelo-portfolio
-
-
-npm install
-
-
-npm run dev
-
-
-npm run build
-
-
-npm run preview
-
-
-Dark/Light Mode Toggle
+### Dark/Light Mode Toggle
 
 Implemented using React state and localStorage.
 
@@ -80,17 +65,56 @@ Works on all pages and persists between sessions.
 
 Credits
 
-Design inspired by modern portfolios & UI trends.
-
 Icons by Lucide
 
 Animations via Tailwind CSS + custom CSS
 
-## Contact
+Design inspired by modern portfolio trends
 
-## Email: boipelongakane20@gmail.com
+Contact
 
-## GitHub: boipelo-codes
+Email: boipelongakane20@gmail.com
 
-## LinkedIn: Boipelo Ngakane
+GitHub: boipelo-codes
+
+LinkedIn: Boipelo Ngakane
+
+
+## Installation & Setup
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/boipelo-codes/boipelo-portfolio.git
+cd boipelo-portfolio
+Install dependencies:
+
+bash
+Copy code
+npm install
+Run development server:
+
+bash
+Copy code
+npm run dev
+Build for production:
+
+bash
+Copy code
+npm run build
+Preview production build locally:
+
+bash
+Copy code
+npm run preview
+
+
+
+
+ 
+
+ 
+
+
+
 
