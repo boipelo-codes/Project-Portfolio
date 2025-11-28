@@ -1,41 +1,102 @@
-import React from 'react'
-import { projects } from '../data/projects'
-
+import React from 'react';
+import { Github, ExternalLink } from 'lucide-react';
 
 export default function Projects() {
-return (
-<section id="projects">
-<h2><span className="gradient-text">Featured Projects</span></h2>
-<p className="section-subtitle">Showcasing end-to-end technical capabilities</p>
+  const projects = [
+    {
+      title: "PomoTask",
+      description:
+        "AI-powered Pomodoro timer with intelligent task management. Features smart task breakdowns, time estimates, and motivational quotes.",
+      tech: ["React", "Node.js", "Express", "AI/ML", "Vite"],
+      github: "https://github.com/itsleonbro/PomoTask",
+      demo: "https://pomo-task-azure.vercel.app/",
+    },
+    {
+      title: "RetailPulse",
+      description:
+        "Full-stack data engineering platform with ETL pipeline. Processes retail data with Python, PostgreSQL, and Azure cloud integration.",
+      tech: ["Python", "PostgreSQL", "Azure", "Streamlit", "ETL"],
+      github: "https://github.com/MmelIGaba/RetailPulse",
+      demo: "https://retailpulse-04.streamlit.app/",
+    },
+    {
+      title: "PrepCheck",
+      description:
+        "AI-powered work readiness screening platform for professional preparedness assessment.",
+      tech: ["AI/ML", "React", "Node.js", "Cloud"],
+      github: "https://github.com/MmelIGaba/PrepCheck",
+      demo: "https://prepcheck-1.onrender.com/",
+    },
+    {
+      title: "Power Apps Solution",
+      description:
+        "Enterprise low-code application built with Microsoft Power Apps for streamlined business processes and workflow automation.",
+      tech: ["Power Apps", "Power Automate", "SharePoint", "Low-Code"],
+      demo: "https://apps.powerapps.com/play/e/default-a3f14f21-237f-4028-b978-425eb768a716/a/ff81b365-5ea2-4816-bd8e-3e723680ebc4?tenantId=a3f14f21-237f-4028-b978-425eb768a716",
+    },
+  ];
 
+  return (
+    <section id="projects" className="min-h-screen py-20 px-6">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-6xl font-bold mb-12 animate-fadeIn">
+          Featured <span className="text-indigo-500">Projects</span>
+        </h2>
 
-<div className="projects-grid">
-{projects.map((proj, idx) => (
-<div className="project-card" key={idx}>
-<div className="project-header">
-<h3>{proj.name}</h3>
-<p className="project-role">{proj.role}</p>
-</div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="group p-6 bg-slate-900/50 border border-slate-800 rounded-xl hover:border-indigo-500/50 transition-all hover:scale-105 animate-fadeIn"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-indigo-400 transition-colors">
+                {project.title}
+              </h3>
+              <p className="text-slate-400 mb-4 text-sm leading-relaxed">
+                {project.description}
+              </p>
 
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tech.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-2 py-1 bg-slate-800/50 text-xs rounded text-slate-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
-<div className="project-content">
-<p>{proj.description}</p>
-
-
-<div className="tech-stack">
-{proj.tech.map((t, i) => <span className="tech-tag" key={i}>{t}</span>)}
-</div>
-
-
-<div className="project-links">
-{proj.links.map((link, i) => (
-<a href={link.url} target="_blank" rel="noreferrer" className="project-link" key={i}>{link.label}</a>
-))}
-</div>
-</div>
-</div>
-))}
-</div>
-</section>
-)
+              <div className="flex gap-4">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
+                  >
+                    <Github className="w-4 h-4" />
+                    Code
+                  </a>
+                )}
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Demo
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
+
