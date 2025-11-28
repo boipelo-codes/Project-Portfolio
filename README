@@ -1,0 +1,29 @@
+# Boipelo Ngakane - Full Stack & DevOps Portfolio
+
+A modern, responsive portfolio showcasing my work as a Full Stack and DevOps Engineer. Built with **React**, **Tailwind CSS**, and **Vite**, featuring light/dark mode toggle, smooth animations, and a dynamic hero section.
+
+## Features
+
+- Dark/Light mode toggle with `localStorage` persistence
+- Smooth scrolling navigation
+- Animated hero section with floating and orbiting 3D elements
+- Skills & technologies showcase
+- Projects portfolio with GitHub & demo links
+- Contact section with email, GitHub, and LinkedIn links
+- Responsive design for mobile, tablet, and desktop
+- Built with **React + Tailwind + Vite**
+
+---
+
+## Technologies Used
+
+- **Frontend:** React, Tailwind CSS, Vanilla JavaScript
+- **Build Tool:** Vite
+- **Icons:** Lucide-react
+- **Animations:** Tailwind CSS + custom keyframes
+- **Hosting:** Vercel (recommended), Netlify, Render, GitHub Pages
+
+---
+
+## File Structure
+
