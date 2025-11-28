@@ -27,3 +27,69 @@ A modern, responsive portfolio showcasing my work as a Full Stack and DevOps Eng
 
 ## File Structure
 
+├─ public/
+├─ src/
+│ ├─ components/
+│ │ ├─ Navigation.jsx
+│ │ ├─ Hero.jsx
+│ │ ├─ About.jsx
+│ │ ├─ Projects.jsx
+│ │ ├─ Skills.jsx
+│ │ ├─ Contact.jsx
+│ │ └─ Footer.jsx
+│ ├─ App.jsx
+│ ├─ index.css
+│ └─ main.jsx
+├─ package.json
+├─ tailwind.config.js
+├─ postcss.config.js
+├─ vite.config.js
+└─ index.html
+
+
+---
+
+## Installation & Setup
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/boipelo-codes/boipelo-portfolio.git
+cd boipelo-portfolio
+
+
+npm install
+
+
+npm run dev
+
+
+npm run build
+
+
+npm run preview
+
+
+Dark/Light Mode Toggle
+
+Implemented using React state and localStorage.
+
+Toggles the dark class on the <html> element.
+
+Works on all pages and persists between sessions.
+
+Credits
+
+Design inspired by modern portfolios & UI trends.
+
+Icons by Lucide
+
+Animations via Tailwind CSS + custom CSS
+
+Contact
+
+Email: boipelongakane20@gmail.com
+
+GitHub: boipelo-codes
+
+LinkedIn: Boipelo Ngakane
