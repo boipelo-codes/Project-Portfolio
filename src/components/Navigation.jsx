@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import { Sun, Moon } from 'lucide-react';
 
 export default function Navigation({ scrolled, scrollToSection }) {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true); // dark by default
 
-  // Apply/remove 'dark' class on <html>
   useEffect(() => {
-    const html = document.documentElement;
     if (darkMode) {
-      html.classList.add('dark');
+      document.documentElement.classList.add('dark');
     } else {
-      html.classList.remove('dark');
+      document.documentElement.classList.remove('dark');
     }
   }, [darkMode]);
+
+  const toggleDarkMode = () => setDarkMode(!darkMode);
 
   return (
     <nav
@@ -21,28 +22,33 @@ export default function Navigation({ scrolled, scrollToSection }) {
           : 'py-6'
       }`}
     >
-      <div className="flex items-center justify-between px-8">
-        <span className="font-bold text-xl text-white dark:text-slate-200">
+      <div className="flex items-center justify-between px-8 max-w-7xl mx-auto">
+        <span className="font-bold text-xl text-white dark:text-slate-950">
           boipelo.
         </span>
 
         <div className="flex items-center space-x-6">
-          {['home', 'about', 'projects', 'services', 'contact'].map((item) => (
+          {['home', 'about', 'projects', 'services'].map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item)}
-              className="text-slate-400 hover:text-white dark:text-slate-300 dark:hover:text-white transition-colors capitalize"
+              className="text-slate-400 dark:text-slate-600 hover:text-white dark:hover:text-slate-950 transition-colors capitalize"
             >
               {item}
             </button>
           ))}
 
-          {/* Dark/Light Toggle */}
+          {/* Dark/Light toggle */}
           <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="ml-4 px-3 py-1 rounded-md bg-slate-700 dark:bg-slate-300 text-white dark:text-slate-900 font-medium transition-colors hover:bg-slate-600 dark:hover:bg-slate-400"
+            onClick={toggleDarkMode}
+            className="p-2 rounded-full bg-slate-800 dark:bg-slate-200 hover:bg-indigo-500 dark:hover:bg-indigo-400 transition-colors"
+            title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
           >
-            {darkMode ? 'Light' : 'Dark'}
+            {darkMode ? (
+              <Sun className="w-5 h-5 text-yellow-400" />
+            ) : (
+              <Moon className="w-5 h-5 text-gray-800" />
+            )}
           </button>
         </div>
       </div>
