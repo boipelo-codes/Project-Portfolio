@@ -57,7 +57,8 @@ export default function Hero({ scrollToSection, mousePosition }) {
         {/* Right 3D Illustration Area */}
         <div className="relative animate-fadeIn" style={{ animationDelay: '600ms' }}>
           <div className="relative bg-gradient-to-br from-slate-900 dark:from-slate-100 to-black dark:to-slate-200 rounded-3xl p-8 border border-slate-800 dark:border-slate-300 overflow-hidden group hover:border-indigo-500/50 transition-all duration-500">
-            
+        
+        
             {/* Glitch effect lines */}
             <div className="absolute inset-0 opacity-30">
               {[...Array(20)].map((_, i) => (

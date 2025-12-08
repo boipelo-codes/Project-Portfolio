@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 .vercel
 .env*.local
+
+# Render API Key
+rnd_7VTOTjJQqnTzf5FiIPOCmUykr0Ft
