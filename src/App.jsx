@@ -6,7 +6,7 @@ import Projects from './components/projectS';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ThemeToggle from './components/ThemeToggle';
-import Skills from './components/skillS';
+import Skills from './components/Skills';
 import './index.css';
 
 export default function App() {
