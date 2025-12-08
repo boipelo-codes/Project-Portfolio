@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navigation from './components/NavigationTemp';
+import Hero from './components/HeroTemp';
+import About from './components/AboutTemp';
+import Projects from './components/ProjectsTemp';
+import Contact from './components/ContactTemp';
+import Footer from './components/FooterTemp';
+import ThemeToggle from './components/ThemeToggleTemp';
+import Skills from './components/SkillsTemp';
 import './index.css';
 
 export default function App() {
