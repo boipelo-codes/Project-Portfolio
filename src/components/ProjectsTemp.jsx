@@ -29,6 +29,12 @@ export default function Projects() {
       description: "Enterprise low-code application built with Microsoft Power Apps for streamlined business processes and workflow automation.",
       tech: ["Power Apps", "Power Automate", "SharePoint", "Low-Code"],
       demo: "https://apps.powerapps.com/play/e/default-a3f14f21-237f-4028-b978-425eb768a716/a/ff81b365-5ea2-4816-bd8e-3e723680ebc4?tenantId=a3f14f21-237f-4028-b978-425eb768a716"
+    },
+    {
+      title: "Secure AWS VPC Infrastructure Deployment",
+      description: "Demonstrating the design and implementation of a secure AWS Virtual Private Cloud using a tiered architecture.",
+      tech: ["AWS", "VPC", "Tiered Architecture", "Security"],
+      github: "https://github.com/boipelo-codes/secure-aws-vpc-project"
     }
   ];
 
