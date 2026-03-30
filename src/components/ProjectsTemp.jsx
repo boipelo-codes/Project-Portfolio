@@ -48,6 +48,11 @@ export default function Projects() {
       tech: ["HTML5", "CSS3", "Socket.IO", "MongoDB w Mongoose", "Live Server"],
       github: "https://github.com/boipelo-codes/rps-multiplayer"
     },
+      title: "Secure AWS VPC Infrastructure Deployment",
+      description: "Demonstrating the design and implementation of a secure AWS Virtual Private Cloud using a tiered architecture.",
+      tech: ["AWS", "VPC", "Tiered Architecture", "Security"],
+      github: "https://github.com/boipelo-codes/secure-aws-vpc-project"
+    }
   ];
 
   return (
