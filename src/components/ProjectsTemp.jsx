@@ -31,6 +31,12 @@ export default function Projects() {
       demo: "https://apps.powerapps.com/play/e/default-a3f14f21-237f-4028-b978-425eb768a716/a/ff81b365-5ea2-4816-bd8e-3e723680ebc4?tenantId=a3f14f21-237f-4028-b978-425eb768a716"
     },
     {
+      title: "Secure AWS VPC Infrastructure Deployment",
+      description: "Demonstrating the design and implementation of a secure AWS Virtual Private Cloud using a tiered architecture.",
+      tech: ["AWS", "VPC", "Tiered Architecture", "Security"],
+      github: "https://github.com/boipelo-codes/secure-aws-vpc-project"
+    },
+    {
       title: "Scalable-3-Tier-Containerized-Application-on-AWS",
       description: "A real‑time multiplayer Rock Paper Scissors game transformed into a production‑ready, highly available cloud application on AWS. This project demonstrates end‑to‑end cloud engineering skills including Infrastructure as Code (Terraform), containerization (Docker), CI/CD (GitHub Actions), and monitoring (CloudWatch).",
       tech: ["HTML5", "CSS", "JavaScript", "NodeJs", "Socket.IO", "PostgreSQL(Amazon RDS)", "Redis(AmazonElastiCache)", "Docker", "Terraform", "Github Action", "Cloudwatch"],
