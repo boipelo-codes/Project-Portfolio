@@ -29,7 +29,19 @@ export default function Projects() {
       description: "Enterprise low-code application built with Microsoft Power Apps for streamlined business processes and workflow automation.",
       tech: ["Power Apps", "Power Automate", "SharePoint", "Low-Code"],
       demo: "https://apps.powerapps.com/play/e/default-a3f14f21-237f-4028-b978-425eb768a716/a/ff81b365-5ea2-4816-bd8e-3e723680ebc4?tenantId=a3f14f21-237f-4028-b978-425eb768a716"
-    }
+    },
+    {
+      title: "Scalable-3-Tier-Containerized-Application-on-AWS",
+      description: "A real‑time multiplayer Rock Paper Scissors game transformed into a production‑ready, highly available cloud application on AWS. This project demonstrates end‑to‑end cloud engineering skills including Infrastructure as Code (Terraform), containerization (Docker), CI/CD (GitHub Actions), and monitoring (CloudWatch).",
+      tech: ["HTML5", "CSS", "JavaScript", "NodeJs", "Socket.IO", "PostgreSQL(Amazon RDS)", "Redis(AmazonElastiCache)", "Docker", "Terraform", "Github Action", "Cloudwatch"],
+      github: "https://github.com/boipelo-codes/Design-and-Deploy-a-Scalable-3-Tier-Containerized-Application-on-AWS-Using-Terraform-CI-CD"
+    },
+    {
+      title: "🎮 Rock Paper Scissors – Multiplayer Real-Time Game",
+      description: " A real‑time multiplayer Rock Paper Scissors game built with Node.js, Socket.IO, and MongoDB. Enter a username, get matched with another player, and battle it out with instant updates and persistent scores.",
+      tech: ["HTML5", "CSS3", "Socket.IO", "MongoDB w Mongoose", "Live Server"],
+      github: "https://github.com/boipelo-codes/rps-multiplayer"
+    },
   ];
 
   return (
