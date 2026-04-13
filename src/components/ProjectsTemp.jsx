@@ -47,6 +47,13 @@ export default function Projects() {
       description: " A real‑time multiplayer Rock Paper Scissors game built with Node.js, Socket.IO, and MongoDB. Enter a username, get matched with another player, and battle it out with instant updates and persistent scores.",
       tech: ["HTML5", "CSS3", "Socket.IO", "MongoDB w Mongoose", "Live Server"],
       github: "https://github.com/boipelo-codes/rps-multiplayer"
+    },
+    {
+      title: "🎨 Etch-A-Sketch",
+      description: "A web-based Etch-A-Sketch implementation with customizable drawing tools and color palettes.",
+      tech: ["HTML5", "CSS3", "JavaScript"],
+      github: "https://github.com/boipelo-codes/Etch-A-Sketch",
+      demo: " https://boipelo-codes.github.io/Etch-A-Sketch"
     }
   ];
 
